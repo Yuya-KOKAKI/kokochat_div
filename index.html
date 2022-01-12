@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SkyWay - Room example</title>
+    <title>デモ部屋</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div class="container">
-      <h1 class="heading">Room example</h1>
+      <h1 class="heading">音声チャットができる部屋</h1>
       <p class="note">
         Change Room mode (before join in a room):
-        <a href="#">mesh</a> / <a href="#sfu">sfu</a>
+        <a href="#">5人以下の時</a> / <a href="#sfu">６人以上の時</a>
       </p>
       <div class="room">
         <div>
           <video id="js-local-stream"></video>
           <span id="js-room-mode"></span>:
-          <input type="text" placeholder="Room Name" id="js-room-id">
-          <button id="js-join-trigger">Join</button>
-          <button id="js-leave-trigger">Leave</button>
+          <input type="text" placeholder="Room Name" id="js-room-id" value="room_1234">
+          <button id="js-join-trigger">MTGに参加する</button>
+          <button id="js-leave-trigger">MTGから退出する</button>
         </div>
 
         <div class="remote-streams" id="js-remote-streams"></div>
@@ -27,7 +27,7 @@
         <div>
           <pre class="messages" id="js-messages"></pre>
           <input type="text" id="js-local-text">
-          <button id="js-send-trigger">Send</button>
+          <button id="js-send-trigger">メッセージを送る</button>
         </div>
       </div>
       <p class="meta" id="js-meta"></p>
